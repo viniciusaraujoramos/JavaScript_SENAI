@@ -67,7 +67,6 @@ console.log(mudar2);
 console.log(typeof mudar2);
 
 //EXTRA
-
 console.log("\n=======EXTRA=======\n")
 
 let nome3 = prompt("Escreva seu nome:");
@@ -78,7 +77,7 @@ let cidade3 = prompt("E onde você mora:");
 let profissao3 = prompt("Se você não fosse pedreiro o que você seria?")
 
 console.log("Cadastro do usuario.")
-console.log(`nome: ${nome3} `)
+console.log(`nome: ${nome3} `) 
 console.log(`Idade: ${idade3} `)
 console.log(`Altura: ${altura3} `)
 console.log(`Peso: ${peso} `)

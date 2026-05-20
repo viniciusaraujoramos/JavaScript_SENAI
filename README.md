@@ -11,3 +11,9 @@ Variáveis, tipagem, operadores relacionais, operadores matemáticos e operadore
 
 ### Aula - 03
 Condicionais(if e else)
+
+### Aula - 04
+Organização com GIT através do CMD
+
+### Aula - 05
+Laços de repetição ( for e while )

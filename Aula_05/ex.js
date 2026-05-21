@@ -43,29 +43,65 @@ function ex4(){
     }
 }
 function ex5(){
-    const randon = Math.random() * 100;
+    let randon = Math.floor(Math.random() * 100);
     let resposta = Number(prompt("Digite um numero de 1 a 100"));
     while(resposta != randon){
-        
-        resposta = Number(prompt("Digite outro número"));
+        if(resposta<randon){
+            resposta = Number(prompt("O número digitado é menor que o esperado. Digite outro número"));
+        }
+        else if(resposta>randon){
+            resposta = Number(prompt("O número digitado é maior que o esperado. Digite outro número"));
+        }
     }
     console.log("Você acertou, o número era: " + randon)
 
 }
 function ex6(){
-    
+    let numero = Number(prompt("Digite um número:"))
+    while(numero != -1){
+        console.log(numero)
+        numero--
+    }
 }
 function ex7(){
-    
+    do{ 
+        senha = Number(prompt("Digite uma senha:"))
+        console.log("Acesso negado")
+    }
+    while(senha != 1234)
+        console.log("Acertou! \n A senha era: " + senha)
 }
 function ex8(){
-    
+    let soma = 0
+    do{
+        
+        num = Number(prompt("Digite um número para somar:"))
+        soma = num+soma
+        console.log(soma)
+    }while(num != 0)
 }
 function ex9(){
-    
+    let contador = Number(prompt("Digite o número de números que você irá digitar:"))
+    let contar = 0
+    let soma = 0
+    do{
+        media = Number(prompt("Digite um número"))
+        soma = soma+media
+        contar++
+    }while(contar!=contador)
+    console.log(soma)
 }
 function ex10(){
-    
+    let numero = Number(prompt("Digite um número:"))
+    let soma = 0
+    let calculo = 0
+    while(numero > 1){
+        calculo = (numero - Math.floor(numero/10))*10
+        soma = soma + calculo 
+        numero = Math.floor(numero/10)
+    }
+    console.log(numero)
+
 }
 function ex11(){
     

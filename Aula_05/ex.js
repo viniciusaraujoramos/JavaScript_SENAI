@@ -43,15 +43,11 @@ function ex4(){
     }
 }
 function ex5(){
-    let randon = Math.floor(Math.random() * 100);
+    const randon = Math.random() * 100;
     let resposta = Number(prompt("Digite um numero de 1 a 100"));
     while(resposta != randon){
-        if(resposta<randon){
-            resposta = Number(prompt("O número digitado é menor que o esperado. Digite outro número"));
-        }
-        else if(resposta>randon){
-            resposta = Number(prompt("O número digitado é maior que o esperado. Digite outro número"));
-        }
+        
+        resposta = Number(prompt("Digite outro número"));
     }
     console.log("Você acertou, o número era: " + randon)
 
@@ -100,7 +96,7 @@ function ex10(){
         soma = soma + calculo 
         numero = Math.floor(numero/10)
     }
-    console.log(numero)
+    console.log(soma)
 
 }
 function ex11(){
